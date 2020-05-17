@@ -11,7 +11,10 @@
 
   #lower-site {
     flex-direction: column;
+
   }
+
+
 
 }
 
@@ -182,9 +185,39 @@ body {
   align-items: center;
 }
 
+#spec-header{
+  height: 5vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#spec-header a {
+  opacity: 0;
+  font-size: 1.3vw;
+  color: white;
+  text-decoration: none;
+  margin: 1vw;
+  animation: fade-in 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+#spec-header a:hover {
+  text-decoration: underline;
+}
+
+#spec-header a:visited {
+  color: white;
+}
+
+
 #spec-footer a {
   background-color:rgba(0, 0, 0, 0.5);
-  font-size: 1vw;
+  font-size: 1.3vw;
   color: white;
   text-decoration: none;
   margin: 1vw;
