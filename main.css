@@ -47,7 +47,7 @@ body {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  background: url(img/absolwenci.png);
+  background: url(absolwenci.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -242,7 +242,7 @@ body {
 
 .news_template {
   width: 70%;
-  background: url(img/rekrutacja.jpg);
+  background: url(rekrutacja.jpg);
   background-position: center;
   background-size: cover;
   height: 55%;
