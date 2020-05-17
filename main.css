@@ -101,6 +101,7 @@ body {
   animation: fade-in 2s;
   animation-fill-mode: forwards;
   animation-delay: 1.5s;
+  font-size: 2vw;
 }
 
 .top-site-button {
