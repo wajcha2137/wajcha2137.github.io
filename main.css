@@ -1,0 +1,374 @@
+* {
+  scroll-behavior: smooth;
+}
+
+
+@media (max-width: 900px) {
+  #enrollment {
+    flex-direction: column;
+    width: 50%;
+  }
+}
+
+:root {
+  --orange: #FF8552;
+  --blue: #40476D;
+  --white: #efefef;
+  --black: #0c0c0c;
+  --gray: #bbb9b9;
+  --lighterblack: #0b0b0b;
+  --red: #e74c3c;
+}
+
+header {
+  height: 11%;
+  width: 100%;
+  background-color:rgba(0, 0, 0, 0.5);
+  font-size: 26px;
+  top: 0;
+  position: fixed;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header p {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  background: url(img/absolwenci.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  font-family: 'Raleway';
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeup {
+  from {
+    opacity: 0;
+    bottom: -1;
+  }
+ to {
+   opacity: 1;
+   bottom: 0;
+ }
+
+}
+
+#top-site {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+#top-site img {
+  opacity: 0;
+  animation: fade-in 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+.top-site-title {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  opacity: 0;
+  animation: fade-in 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+}
+
+.top-site-button {
+  opacity: 0;
+  margin-top: 7%;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: fade-in 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+.top-site-button:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.top-site-button-arrow {
+  font-size: 48px;
+  padding: 0;
+  margin: 0;
+}
+
+.top-site-button-title {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway';
+}
+
+.top-site-spec-title {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  opacity: 0;
+  animation: fade-in 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+  font-size: 36px;
+}
+
+
+#lower-site {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lower-site-button {
+  background: var(--blue);
+  margin: 2%;
+  background-position: center;
+  background-size: cover;
+  width: 30%;
+  height: 30%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-family: 'Raleway';
+  color: white;
+  transition: 0.5 transform ease-out;
+  text-decoration: none;
+  opacity: 0;
+  animation: 1s fade-in;
+  animation-fill-mode: forwards;
+}
+
+
+.lower-site-button:hover {
+  transform: scale(1.03);
+  background: var(--orange);
+  text-decoration: underline;
+}
+
+.container {
+  width: 30%;
+  height: 100%;
+  font-family: 'Raleway';
+  }
+
+.container h2 {
+  animation: fadeup 0.7s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  margin: 2%;
+  font-size: 3em;
+  color: white;
+  font-family: 'Raleway';
+}
+
+.container h3 {
+  position: absolute;
+  animation: fadeup 0.7s;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  bottom: 0;
+  margin: 2%;
+  font-size: 2em;
+}
+
+.container a {
+  color: white;
+}
+
+.container a:hover {
+  color: gray;
+}
+
+.container a:visited {
+  color: white;
+}
+
+
+.newsroom {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.newsfeed {
+  width: 70%;
+  height: 100%;
+  overflow-y: scroll;
+  position: fixed;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.news_template {
+  width: 70%;
+  background: url(img/rekrutacja.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 55%;
+  opacity: 0;
+  animation: fadeup 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  border: 4px solid var(--red);
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.news_title {
+  color: white;
+  width: 70%;
+  bottom: 0;
+  font-size: 36px;
+  animation-delay: 1s;
+  font-family: 'Ubuntu', sans-serif;
+  -webkit-text-stroke: 0.5px var(--black);
+}
+
+.news_title a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.news_title:hover {
+  text-decoration: underline;
+}
+
+.news_date {
+  color: white;
+  bottom: 0;
+  font-size: 24px;
+  animation-delay: 1s;
+  font-family: 'Ubuntu', sans-serif;
+  -webkit-text-stroke: 0.5px var(--black);
+}
+
+.news_author {
+  color: white;
+  font-size: 19px;
+  animation-delay: 1s;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#enrollment {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.enrollment-container {
+  background: var(--blue);
+  margin: 1%;
+  background-position: center;
+  background-size: cover;
+  width: 20%;
+  height: 70%;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Raleway';
+  color: white;
+  transition: 0.5 transform ease-out;
+  text-decoration: none;
+  opacity: 0;
+  animation: 1s fade-in;
+  animation-fill-mode: forwards;
+  font-family: 'Raleway';
+}
+
+.enrollment-container-title {
+  font-size: 24px;
+}
+
+.enrollment-container img {
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+}
+
+.enrollment-container-button {
+  background: var(--orange);
+  width: 5%;
+  height: auto;
+  padding: 2%;
+  color: white;
+  text-decoration: none;
+  position:
+}
+
+.enrollment-container-button:hover {
+  text-decoration: underline;
+}
+
+.enrollment-container-button:visited {
+  color: white;
+}
+
+.enroll-container-content {
+  margin: 2%;
+}
+
+.enrollment-goback-button {
+  position: absolute;
+  bottom: 0;
+  font-size: 24px;
+  color: var(--white);
+  text-decoration: none;
+  opacity: 0;
+  animation: 1s fade-in;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.enrollment-goback-button:hover {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.enrollment-goback-button:visited{
+  color: var(--white);
+}
