@@ -185,6 +185,26 @@ body {
   align-items: center;
 }
 
+#spec-footer a {
+  opacity: 0;
+  background-color:rgba(0, 0, 0, 0.5);
+  font-size: 1.3vw;
+  color: white;
+  text-decoration: none;
+  margin: 1vw;
+  animation: fade-in 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+#spec-footer a:hover {
+  text-decoration: underline;
+}
+
+#spec-footer a:visited {
+  color: white;
+}
+
 #spec-header{
   height: 5vh;
   width: 100%;
@@ -215,21 +235,7 @@ body {
 }
 
 
-#spec-footer a {
-  background-color:rgba(0, 0, 0, 0.5);
-  font-size: 1.3vw;
-  color: white;
-  text-decoration: none;
-  margin: 1vw;
-}
 
-#spec-footer a:hover {
-  text-decoration: underline;
-}
-
-#spec-footer a:visited {
-  color: white;
-}
 
 .lower-site-spec-text {
   color: white;
