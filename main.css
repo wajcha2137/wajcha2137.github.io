@@ -170,7 +170,7 @@ body {
   justify-content: center;
 }
 
-#spec-lower-site img {
+.spec-lower-site-img {
   margin: 1vw;
   border: 2px solid var(--blue);
 }
