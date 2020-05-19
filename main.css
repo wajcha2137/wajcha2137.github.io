@@ -171,7 +171,7 @@ body {
 }
 
 .spec-lower-site-img {
-  margin: 1vw;
+  width: 50vw;
   border: 2px solid var(--blue);
 }
 
@@ -408,6 +408,7 @@ body {
   animation: 1s fade-in;
   animation-fill-mode: forwards;
   font-family: 'Raleway';
+  box-sizing: border-box;
 }
 
 .enrollment-container-title {
