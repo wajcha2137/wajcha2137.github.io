@@ -169,12 +169,104 @@ body {
 }
 
 #about-us-content {
+  opacity: 0;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   width: 100vw;
+  height: 100vh;
+  color: white;
+  animation: fade-in 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+#about-us-acces {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+}
+
+#about-us-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  flex-direction: column;
+}
+
+#about-us-teachers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
   height: 80vh;
   color: white;
+  flex-direction: column;
+  margin-top: 3vh;
+}
+#about-us-footer {
+  height: 5vh;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-us-footer a {
+  opacity: 0;
+  background-color:rgba(0, 0, 0, 0.5);
+  font-size: 1.3vw;
+  color: white;
+  text-decoration: none;
+  margin: 1vw;
+  animation: fade-in 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+#about-us-footer a:hover {
+  text-decoration: underline;
+}
+
+#about-us-footer a:visited {
+  color: white;
+}
+
+
+
+.about-us-contact-title {
+  font-size: 2vw;
+}
+
+.dot{
+  color: white;
+
+}
+
+
+#about-us-teachers img {
+  width: 10vw;
+  border: 1px solid var(--orange);
+}
+
+.about-us-content-teacher {
+  width: 100vw;
+  height: 33vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.about-us-content-teacher:nth-child(2) {
+  justify-content: flex-end;
 }
 
 #about-us-content:nth-child(3) {
