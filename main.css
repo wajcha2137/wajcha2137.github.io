@@ -154,6 +154,42 @@ body {
 }
 
 
+#about-us {
+  width: 100%;
+  height: 100%;
+}
+
+#about-us-header {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+}
+
+#about-us-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 80vh;
+  color: white;
+}
+
+#about-us-content:nth-child(3) {
+  flex-direction: row-reverse;
+}
+
+#about-us-content img, iframe {
+  margin: 3vw;
+}
+
+#about-us-content-acces ul {
+  font-size: 24px;
+}
+
+
 #lower-site {
   width: 100%;
   height: 100%;
